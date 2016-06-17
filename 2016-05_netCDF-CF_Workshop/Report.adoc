@@ -1,0 +1,19 @@
+= Report on the May 2016 "Advancing netCDF-CF" Community Workshop
+
+== Abstract
+
+== Introduction
+
+== Plenary Discussions
+
+=== CF Governance
+=== CF 
+== Breakout Discussions
+
+include::CF_StandardNames.adoc[]
+
+=== Template for Individual Breakout Discussion
+
+==== Use Cases
+
+==== Example/Sample Datasets: CDLs

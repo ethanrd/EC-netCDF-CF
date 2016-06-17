@@ -1,0 +1,23 @@
+= CF Standard Names
+
+== Attending
+
+* Ethan Davis, UCAR Unidata
+* Mike Dixon, NCAR EOL
+* Shannon Leslie, NSIDC
+* Nick Guy, Univ of Wyoming
+* Scott Collis, Argonne NL
+* Emily Northup, NASA AtmSci DAAC
+* Scott Peckham, Univ of Colorado
+* Ken Kehoe, NOAA - Univ of Oklahoma
+* Bert Jagers, Deltares
+* Maarten Sneep, KNMI
+
+== Discussion
+
+
+== Use Cases
+
+== Example/Sample Datasets: CDLs
+
+== Next Steps
