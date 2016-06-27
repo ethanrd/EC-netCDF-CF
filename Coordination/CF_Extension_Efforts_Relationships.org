@@ -1,0 +1,36 @@
+* CF Extension Development Efforts 
+** How they relate to each other and to related issues
+#+BEGIN_SRC dot :file CF_Extension_Efforts_Relationships.svg :cmdline -Kdot -Tsvg
+  digraph G {
+    ec_netcdf_cf [label="EC netCDF-CF Project"];
+    /* netCDF */
+    netcdf [label="netCDF"];
+    netcdf_3 [label="netCDF-3"];
+    netcdf_4 [label="netCDF-4"];
+    netcdf_classic [label="netCDF Classic Data Model"];
+    netcdf_enhanced [label="netCDF Enhanced Data Model"];
+    /* CF */
+    cf [label="CF"];
+    cf_1 [label="CF 1.x"];
+    cf_2 [label="CF 2.0"];
+    cf_radial [label="CF Radial"];
+    cf_radial_github [label="https://github.com/NCAR/CfRadial"];
+    cf_radial_1 [label="CF Radial 1.x"];
+    cf_radial_2 [label="CF Radial 2.0"];
+    cf_dsg2 [label="DSG/CF-2 Extension"];
+    cf_satellite [label="CF Satellite Extension"];
+    cf_hierarchy_data [label="CF Extension: Hierarchy for Data"];
+    cf_hierarchy_metadata [label="CF Extension: Hierarchy for Metadata"];
+    nc_linked_data [label="netCDF-LD"];
+    cf_locate_space [label="Randy Horne's locating space weather data in space/time document"];
+    /* Edges */
+    edge [label="Using"];
+    cf_dsg2 -> cf_2;
+    edge [label="Will Use"];
+    cf_radial_2 -> cf_2;
+  }
+#+END_SRC
+
+#+RESULTS:
+[[file:CF_Extension_Efforts_Relationships.svg]]
+

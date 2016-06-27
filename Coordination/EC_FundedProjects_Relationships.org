@@ -1,0 +1,20 @@
+* CF Extension Development Efforts 
+** How they relate to each other and to related issues
+#+BEGIN_SRC dot :file some_filename.png :cmdline -Kdot -Tpng
+  digraph G {
+    ec-netcdf-cf [label="EC netCDF-CF"];
+    ethan [label="Ethan Davis"];
+    unidata [label="UCAR Unidata"];
+    ethan -> unidata -> ec-netcdf-cf;
+    ec-x-domes [label="EC X-DOMES"];
+    ec-x-domes -> convert-sensor-data-standard
+    rosetta -> convert-sensor-data-standard
+    janet_fredericks
+    whoi
+    janet_fradericks -> whoi -> ec-x-domes
+  }
+#+END_SRC
+
+#+RESULTS:
+[[file:EC_nc-CF_StakeholderDiagram.png
+

@@ -1,0 +1,14 @@
+sudo: false
+
+before_install:
+  - gem install asciidoctor coderay;
+
+script:
+  - echo Building docs;
+    cd 2016-05_netCDF-CF_Workshopdocs;
+    ./adoc2html.sh 2> build.log;
+    if [ -s build.log ]; then
+       echo Doc build produced errors:;
+       cat build.log;
+       false;
+    fi;
