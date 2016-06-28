@@ -6,7 +6,8 @@ before_install:
 script:
   - echo Building docs;
     cd 2016-05_netCDF-CF_Workshopdocs;
-    ./adoc2html.sh 2> build.log;
+    asciidoctor *.adoc 2> build.log;
+    #./adoc2html.sh 2> build.log;
     if [ -s build.log ]; then
        echo Doc build produced errors:;
        cat build.log;
