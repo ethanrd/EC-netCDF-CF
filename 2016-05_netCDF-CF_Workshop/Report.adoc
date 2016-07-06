@@ -7,7 +7,7 @@
 == Plenary Discussions
 
 === CF Governance
-=== CF 
+=== CF Extensions
 == Breakout Discussions
 
 include::CF_StandardNames.adoc[]
