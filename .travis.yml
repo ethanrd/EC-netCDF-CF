@@ -5,7 +5,7 @@ before_install:
 
 script:
   - echo Building docs;
-    cd 2016-05_netCDF-CF_Workshopdocs;
+    cd 2016-05_netCDF-CF_Workshop;
     ./adoc2html.sh 2> build.log;
     if [ -s build.log ]; then
        echo Doc build produced errors:;
