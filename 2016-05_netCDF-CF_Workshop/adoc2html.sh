@@ -6,7 +6,7 @@
 # find all adoc files and convert them to html
 #
 echo "Render all adoc files to html"
-find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor
+find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor -d book
 ##
 ## Make sure to link the thredds specific css file.
 #    -a linkcss -a stylesheet=thredds_adoc.css
