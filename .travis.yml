@@ -1,7 +1,7 @@
 sudo: false
 
 before_install:
-  - gem install asciidoctor coderay asciidoctor-pdf;
+  - gem install asciidoctor coderay && gem install asciidoctor-pdf --pre;
 
 script:
   - echo Building docs;
