@@ -7,6 +7,11 @@
 #
 echo "Render all adoc files to html"
 find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor -d book
+# To generate PDF
+# - need to install asciidoctor-pdf (see .travis.yml file)
+#   having trouble with versions see Travis-CI build #7
+#   (https://travis-ci.org/ethanrd/EC-netCDF-CF)
+# - then use -b (--backend) option (e.g., '-b pdf')
 ##
 ## Make sure to link the thredds specific css file.
 #    -a linkcss -a stylesheet=thredds_adoc.css
