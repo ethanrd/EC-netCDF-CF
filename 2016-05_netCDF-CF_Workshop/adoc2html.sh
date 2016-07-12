@@ -6,7 +6,10 @@
 # find all adoc files and convert them to html
 #
 echo "Render all adoc files to html"
-find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor -d book
+find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor -d book -v
+# If any filenames contain spaces, may need
+#   'find ... -print0 | xargs -n 1 -0 ...' in case of
+#
 # To generate PDF
 # - need to install asciidoctor-pdf (see .travis.yml file)
 #   having trouble with versions see Travis-CI build #7
