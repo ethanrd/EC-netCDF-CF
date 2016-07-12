@@ -13,3 +13,6 @@ script:
        cat build.log;
        false;
     fi;
+
+after_success:
+  - ls -ale;
