@@ -2,11 +2,15 @@
 
 # Copied from THREDDS 5.0
 # (See https://github.com/Unidata/thredds/blob/5.0.0/docs/website/adoc2html.sh)
+
+# Build top-level adoc which includes the section adoc files
+echo "Render report from adoc to html"
+asciidoctor -d book -v Report.adoc
+
+## find all adoc files and convert them to html
+#echo "Render all adoc files to html"
+#find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor -d book -v
 #
-# find all adoc files and convert them to html
-#
-echo "Render all adoc files to html"
-find . -type f -name "*.adoc" -print | xargs -n 1 asciidoctor -d book -v
 # If any filenames contain spaces, may need
 #   'find ... -print0 | xargs -n 1 -0 ...' in case of
 #
