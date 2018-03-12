@@ -1,0 +1,33 @@
+netcdf corridor_slice {
+  :featureType = "corridor" ;
+
+  dimensions:
+      time = UNLIMITED ; // currently 11
+      lat = 3 ;
+      lon = 4 ;
+      z = 5 ;
+  variables:
+      int time(time) ;
+          time:standard_name = "time" ;
+          time:units = "minutes since 2018-03-12T09:00Z" ;
+      float lat(time, z, lat, lon) ;
+          lat:standard_name = "latitude" ;
+          lat:units = "degrees_north" ;
+      float lon(time, z, lat, lon) ;
+          lon:standard_name = "longitude" ;
+          lon:units = "degrees_east" ;
+      float z(time, z, lat, lon) ;
+          z:standard_name = “altitude”;
+          z:long_name = "height above mean sea level" ;
+          z:units = "km" ;
+          z:positive = "up" ;
+          z:axis = "Z" ;
+
+      float temp(time, z, lat, lon) ;
+          temp:standard_name = "temperature" ;
+          temp:units = "degC" ;
+          temp:coordinates = "time z lat lon" ;
+//  data:
+//      time = 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300 ;
+//      lat =
+}

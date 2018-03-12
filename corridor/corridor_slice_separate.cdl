@@ -1,0 +1,35 @@
+netcdf corridor_slice_separate {
+  dimensions:
+      time = UNLIMITED ; // currently 11
+      slice_lat = 3 ;
+      slice_lon = 4 ;
+      slice_level = 5 ;
+  variables:
+      int time(time) ;
+          time:units = "minutes since 2018-03-12T09:00Z"
+      double traj_lat(time) ;
+          traj_lat:units = "degrees_north" ;
+          traj_lat:standard_name = "latitude" ;
+      double traj_lon(time) ;
+          traj_lat:units = "degrees_east" ;
+          traj_lat:standard_name = "longitude" ;
+      double traj_level(time) ;
+          traj_level:units = "meters" ;
+          traj_level:standard_name = "" ;
+
+      double slice_lat(time, slice_level, slice_lat, slice_lon);
+          slice_lat:units = "degrees_north" ;
+          slice_lat:standard_name = "latitude" ;
+      double slice_lon(time, slice_level, slice_lat, slice_lon);
+          slice_lon:units = "degrees_east" ;
+          slice_lon:standard_name = "longitude" ;
+      double slice_level(time, slice_level, slice_lat, slice_lon);
+          slice_level:units = "meters" ;
+          slice_level:standard_name = "" ;
+      double temp(time, slice_level, slice_lat, slice_lon) ;
+          temp:units = "degC" ;
+          temp:standard_name = "temperature" ;
+//  data:
+//      time = 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300 ;
+//      lat =
+}
